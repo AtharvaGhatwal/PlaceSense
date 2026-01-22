@@ -1,16 +1,102 @@
-# React + Vite
+# PlaceSense 🌍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PlaceSense is a smart location-based place discovery web app that helps users find nearby places based on their mood, distance, and ratings — with live map interaction and route directions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 📍 **Live Location Detection** (with fallback)
+- 🗺️ **Interactive Google Maps**
+- 🛣️ **Draw routes directly on the map**
+- 🧭 **Open directions in Google Maps**
+- 🎯 **Mood-based filtering** (Work, Date, Quick Bite, Budget)
+- 🔍 **Search places by name**
+- ⭐ **Sort by rating or distance**
+- 📌 **Focus places on map by clicking results**
+- 🧠 **Clean UI with glassmorphism design**
+- 📱 **Responsive & mobile-friendly layout**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React + Vite**
+- **Google Maps JavaScript API**
+- **Google Places API**
+- **JavaScript (ES6+)**
+- **CSS (Glassmorphism UI)**
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/AtharvaGhatwal/PlaceSense.git
+cd PlaceSense
+```
+
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Add environment variables
+Create a .env file in the root directory:
+```bash
+VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+```
+
+### 4️⃣ Run the app
+```bash
+npm run dev
+```
+The app will be available at:
+```bash
+http://localhost:5173
+```
+---
+
+### 📸 Screenshots
+
+---
+
+### 🧠 Project Motivation
+
+PlaceSense was built to explore real-world usage of Google Maps APIs, improve UI/UX design skills, and create a practical, interactive location-based web experience.
+
+---
+
+### 🔮 Future Improvements
+
+- Minimap / floating map mode
+- Category-based place types
+- Travel mode selector (walk, bike, transit)
+- Saved places / favorites
+- Dark–light theme toggle
+
+---
+
+## 👨‍💼 Author
+
+Atharva Ghatwal
+
+📚 B.E. in Artificial Intelligence and Data Science
+
+🔗  [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/atharvaghatwal)
+
+🌐 [![GitHub](https://img.shields.io/badge/GitHub-181717.svg?logo=github&logoColor=white)](https://github.com/AtharvaGhatwal)
+
+---
+
+## 📞 Questions or Feedback?
+Feel free to open an **Issue** or submit a **Pull Request** on GitHub.
+
+---
+
+⭐ If you found this project helpful, consider giving the repository a star!
+
+---
+
+**Last Updated:** January 2026
