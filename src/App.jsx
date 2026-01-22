@@ -26,7 +26,7 @@ function App() {
   return () => window.removeEventListener("scroll", onScroll);
 }, []);
 
-  /* 📍 USER LOCATION */
+  /* USER LOCATION */
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       (pos) =>
@@ -38,7 +38,7 @@ function App() {
     );
   }, []);
 
-  /* 🗺️ GOOGLE MAP + PLACES */
+  /* GOOGLE MAP + PLACES */
   useEffect(() => {
     if (!userLocation) return;
 
@@ -108,7 +108,7 @@ service.nearbySearch(
     document.body.appendChild(script);
   }, [userLocation, mood]);
 
-  /* 📍 CLICK CARD → FOCUS MAP */
+  /* CLICK CARD → FOCUS MAP */
   const focusPlaceOnMap = (place) => {
     if (!mapInstanceRef.current || !place.geometry) return;
 
@@ -128,7 +128,7 @@ service.nearbySearch(
     mapInstanceRef.current.panTo(location);
     mapInstanceRef.current.setZoom(16);
   };
-    /* 🛣️ DRAW ROUTE */
+    /* DRAW ROUTE */
 const drawRouteToPlace = (place) => {
   if (
     !userLocation ||
@@ -432,7 +432,7 @@ const styles = {
   },
   stickyMapWrapper: {
   position: "sticky",
-  top: 20,                // distance from top when sticking
+  top: 20,                
   zIndex: 10,
   marginBottom: 24,
 },
