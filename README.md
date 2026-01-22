@@ -1,31 +1,56 @@
-# PlaceSense 🌍
+# 🌍 PlaceSense
 
-PlaceSense is a smart location-based place discovery web app that helps users find nearby places based on their mood, distance, and ratings — with live map interaction and route directions.
+![GitHub stars](https://img.shields.io/github/stars/AtharvaGhatwal/customer-churn-analysis)
+![GitHub issues](https://img.shields.io/github/issues/AtharvaGhatwal/customer-churn-analysis)
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-5-purple?logo=vite)
+![Google Maps API](https://img.shields.io/badge/Google%20Maps-API-green?logo=googlemaps)
+
+**PlaceSense** is a modern, location-aware place discovery app built with **React + Vite** and **Google Maps API**.  
+It helps users find nearby places based on mood, distance, and ratings — with real-time maps, routes, and directions.
 
 ---
 
-## 🚀 Features
+### 🧠 Project Motivation
+
+PlaceSense was built to explore real-world usage of Google Maps APIs, improve UI/UX design skills, and create a practical, interactive location-based web experience.
+
+---
+
+## ✨ Features
 
 - 📍 **Live Location Detection** (with fallback)
 - 🗺️ **Interactive Google Maps**
-- 🛣️ **Draw routes directly on the map**
-- 🧭 **Open directions in Google Maps**
-- 🎯 **Mood-based filtering** (Work, Date, Quick Bite, Budget)
-- 🔍 **Search places by name**
-- ⭐ **Sort by rating or distance**
-- 📌 **Focus places on map by clicking results**
-- 🧠 **Clean UI with glassmorphism design**
-- 📱 **Responsive & mobile-friendly layout**
+- 🛣️ **In-app Route Drawing**
+- 🧭 **Open Directions in Google Maps**
+- 🎯 **Mood-based Filtering** (Work, Date, Quick Bite, Budget)
+- ⭐ **Sort by Rating or Distance**
+- 🔍 **Instant Search**
+- 🧊 **Glassmorphism UI**
+- 📱 **Responsive & Mobile-Friendly**
 
+---
+
+## 🧠 How It Works
+
+1. Detects user location using the browser’s Geolocation API  
+2. Loads Google Maps + Places API
+3. Fetches nearby places in real time
+4. Calculates distance using the Haversine formula
+5. Allows:
+   - focusing places on the map
+   - drawing routes directly on the map
+   - opening full navigation in Google Maps
+   
 ---
 
 ## 🛠️ Tech Stack
 
-- **React + Vite**
-- **Google Maps JavaScript API**
-- **Google Places API**
-- **JavaScript (ES6+)**
-- **CSS (Glassmorphism UI)**
+- **Frontend:** React, Vite
+- **Maps:** Google Maps JavaScript API, Places API, Directions API
+- **Styling:** Custom CSS (Glassmorphism)
+- **State Management:** React Hooks
+- **Build Tool:** Vite
 
 ---
 
@@ -60,21 +85,65 @@ http://localhost:5173
 
 ### 📸 Screenshots
 
+![Map View](images/Screenshot%201.png)
+
+![Route Mode](images/Screenshot%202.png)
+
+![Results List](images/Screenshot%203.png)
+
+![Mobile View](images/Screenshot%204.png)
+
+![Full MaP View](images/Screenshot%205.png)
+
 ---
 
-### 🧠 Project Motivation
+### 🚀 Future Improvements
 
-PlaceSense was built to explore real-world usage of Google Maps APIs, improve UI/UX design skills, and create a practical, interactive location-based web experience.
+- 📌 Save favorite places
+- 🕒 Filter by open hours
+- 🚶 Walking / Transit routes
+- 🔐 User authentication
+- 🌐 Deploy with live demo
 
 ---
 
-### 🔮 Future Improvements
+### 📁 Project Structure
 
-- Minimap / floating map mode
-- Category-based place types
-- Travel mode selector (walk, bike, transit)
-- Saved places / favorites
-- Dark–light theme toggle
+```
+PlaceSense/
+│
+├── public/
+│   ├── bg.mp4
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   │   └── (optional future components)
+│   │
+│   ├── data/
+│   │   └── mockPlaces.js
+│   │
+│   ├── utils/
+│   │   └── moodConfig.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── images/
+│   ├── Screenshot 1.png
+│   ├── Screenshot 2.png
+│   ├── Screenshot 3.png
+│   ├── Screenshot 4.png
+│   └── Screenshot 5.png
+│
+├── .env
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
 ---
 
